@@ -1,4 +1,4 @@
-# Nome do Projeto (Ex: Portal de Notícias / App de Finanças)
+# Projeto Front-end-Legend
 
 ## O Desafio: Interface de Assinaturas "Zero"
 
