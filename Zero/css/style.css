@@ -1,0 +1,63 @@
+/* Adicione bordas suaves, sombras e espaçamento: */
+.cointainer>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10 px rgb(0, 0, 0, 0.2);
+
+}
+
+.header {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.content {
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    font-size: 1em;
+    opacity: 0.8;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(111, 0225), yellow);
+    margin: 0;
+
+    animation: vaiVem 4s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+.cointainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-rows: auto auto auto;
+    }
+
+    .header {
+        font-size: 1.5em;
+    }
+
+    .content {
+        font-size: 1.2em;
+    }
+}
+
+.cointainer{
+    transform: scale(1.03);
+    transition: 0.3s;
+}

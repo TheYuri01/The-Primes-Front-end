@@ -1,0 +1,26 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: content; }
+.item3 { grid-area: footer; }
+
+.container{
+    display: grid;
+    grid-template:
+    'header'
+    'content'
+    'footer';
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+}
+
+.content{
+    height: 900px;
+}
+
+
+.footer{
+
+
+     
+}
+
