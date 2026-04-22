@@ -12,16 +12,15 @@
     color: #000000;
 }
 
-.nav-icon{
+/* .nav-icon{
 
-}
+} */
 
 .header{
   display: flex; 
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
-  width: 100%;
   backdrop-filter: blur(15px);
   margin-bottom: 2rem;
 }
@@ -33,9 +32,9 @@ li{
   width: 70px;
 }
 
-.nav-sign{
+/* .nav-sign{
   
-}
+} */
 
 ul a{
   font-size: clamp(10px, 0.5rem, 5px);
