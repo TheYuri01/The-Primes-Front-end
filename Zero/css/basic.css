@@ -1,66 +1,83 @@
-@keyframes vaiVem{
-  0% {background-position:0% 50%}
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+/* Cria uma animação contínua que movimenta o fundo de um lado para o outro */
+@keyframes vaiVem {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.container > div {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* font-size: 2em; */
-    color: #000000;
+/* Estiliza os filhos diretos do .container (.header, .content, .footer) */
+.container>div {
+  color: #000000;
+  /* Define a cor do texto para preto */
 }
 
-/* .nav-icon{
-
-} */
-
-.header{
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 5%;
-  backdrop-filter: blur(15px);
-  margin-bottom: 2rem;
-}
-
-ul{
+/* Estiliza o cabeçalho principal */
+.header {
   display: flex;
-}
-li{
-  width: 70px;
+  /* Coloca os itens internos lado a lado */
+  justify-content: space-between;
+  /* Espalha os itens (logo na esquerda, menu no centro, botões na direita) */
+  align-items: center;
+  /* Centraliza os itens verticalmente */
+  padding: 1rem 5%;
+  /* Adiciona respiro interno: 1rem em cima/embaixo, 5% nas laterais */
+  backdrop-filter: blur(15px);
+  /* Cria um efeito de desfoque no fundo (estilo "vidro") */
+  margin-bottom: 2rem;
+  /* Cria um espaço abaixo do cabeçalho */
 }
 
-/* .nav-sign{
-  
-} */
+/* Estiliza a lista do menu de navegação */
+ul {
+  display: flex;
+  /* Coloca os itens da lista lado a lado horizontalmente */
+}
 
-ul a{
-  font-size: clamp(10px, 0.5rem, 5px);
-  /* margin: 0;
-  padding: 0; */
+/* Define a largura fixa para cada item da lista do menu */
+li {
+  width: 80px;
+}
+
+/* Ajusta o tamanho da fonte dos links dentro da lista do menu.*/
+ul a {
+  font-size: clamp(12px, 1rem, 18px);
 }
 
 body {
-  background-image: linear-gradient(90deg, rgb(26, 24, 71), rgb(72, 72, 187));  
+  background-image: linear-gradient(to left, rgb(111, 0, 225), yellow);
+  animation-timing-function: ease-in-out;
+  background-image: linear-gradient(90deg, rgb(26, 24, 71), rgb(72, 72, 187));
+  /* Cria um fundo degradê azulado */
   background-size: 150% 150%;
+  /* Aumenta o fundo para que a animação tenha espaço para "correr" */
   margin: 0 auto;
+  /* Remove as margens padrão do navegador */
   animation: vaiVem 15s ease infinite;
+  /* Aplica a animação 15s de duração em loop */
   animation-fill-mode: alternate;
- 
+  /* Faz a animação ir e voltar suavemente */
 }
 
-.container > div:nth-child(1n) {
-  background-color: #96ceb4;	
+/* Define cores de fundo específicas para as seções usando a ordem em que aparecem */
+.container>div:nth-child(1n) {
+  /* Afeta o Header */
+  background-color: #96ceb4;
 }
 
-.container > div:nth-child(3n) {
-    /* background-image: linear-gradient(to right, red, blueviolet); */
-    background-color: #88d8b0;
+.container>div:nth-child(2n) {
+  /* Afeta o Content */
+  background-color: #ff6f69;
 }
 
-.container > div:nth-child(2n) {
-      background-color: #ff6f69;
+.container>div:nth-child(3n) {
+  /* Afeta o Footer */
+  background-color: #88d8b0;
 }
-

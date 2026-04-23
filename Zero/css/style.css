@@ -1,53 +1,64 @@
-/* Adicione bordas suaves, sombras e espaçamento: */
-.cointainer>div {
+/*Observação: este arquivo css não está sendo utilizado ainda no html, ele somente será útil nas versões futuras do projeto.*/
+
+/* Adiciona bordas suaves, sombras e espaçamento nos blocos principais */
+.container>div {
     display: flex;
+    /* Ativa flexbox */
     justify-content: center;
+    /* Centraliza horizontalmente */
     align-items: center;
+    /* Centraliza verticalmente */
     font-size: 2em;
+    /* Dobra o tamanho da fonte padrão */
     color: #ffeead;
+    /* Cor de texto amarelada */
 
     border-radius: 10px;
-
-    box-shadow: 0 4px 10 px rgb(0, 0, 0, 0.2);
-
+    /* Arredonda as pontas das caixas */
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
+    /* Cria uma sombra suave ao redor das caixas */
 }
 
+/* Aumenta o destaque do texto no cabeçalho */
 .header {
     font-size: 2.5em;
     font-weight: bold;
+    /* Deixa o texto em negrito */
     letter-spacing: 2px;
+    /* Afasta um pouco as letras umas das outras */
 }
 
+/* Estiliza o interior da área de conteúdo */
 .content {
     font-size: 1.5em;
     padding: 20px;
+    /* Dá um respiro interno em todos os lados */
     text-align: center;
+    /* Centraliza os textos */
 }
 
+/* Reduz o destaque visual do rodapé */
 .footer {
     font-size: 1em;
     opacity: 0.8;
+    /* Deixa o rodapé levemente transparente */
 }
 
-body {
-    background-image: linear-gradient(to left, rgb(111, 0225), yellow);
-    margin: 0;
-
-    animation: vaiVem 4s infinite;
-    animation-timing-function: ease-in-out;
-}
-
-
-.cointainer {
+/* Define a largura do contêiner e o centraliza na tela */
+.container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Responsividade (Mobile First/Adaptação) */
 @media (max-width: 600px) {
+
+    /* Quando a tela for menor que 600px (celulares), o grid muda as linhas para automático */
     .container {
         grid-template-rows: auto auto auto;
     }
 
+    /* Reduz os tamanhos das fontes em telas menores para não quebrar o layout */
     .header {
         font-size: 1.5em;
     }
@@ -55,9 +66,4 @@ body {
     .content {
         font-size: 1.2em;
     }
-}
-
-.cointainer{
-    transform: scale(1.03);
-    transition: 0.3s;
 }

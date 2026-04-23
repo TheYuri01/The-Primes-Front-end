@@ -1,26 +1,38 @@
-.item1 { grid-area: header; }
-.item2 { grid-area: content; }
-.item3 { grid-area: footer; }
-
-.container{
-    display: grid;
-    grid-template:
-    'header'
-    'content'
-    'footer';
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-
+/* Define nomes de áreas para o Grid. */
+.item1 {
+    grid-area: header;
 }
 
-.content{
+.item2 {
+    grid-area: content;
+}
+
+.item3 {
+    grid-area: footer;
+}
+
+/* O contêiner principal que envolve todo o conteúdo */
+.container {
+    display: grid;
+    /* Ativa o layout em grade */
+
+    /* Define o "mapa" do layout, empilhando o cabeçalho, conteúdo e rodapé */
+    grid-template:
+        'header'
+        'content'
+        'footer';
+
+    /* Define que as colunas e linhas se ajustarão automaticamente ao tamanho do conteúdo */
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/* Define uma altura fixa para a área de conteúdo */
+.content {
     height: 900px;
 }
 
-
-.footer{
-
-
-     
+/* Define uma altura fixa para a área do rodapé */
+.footer {
+    height: 100px;
 }
-
