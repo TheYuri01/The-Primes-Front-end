@@ -1,137 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Positioning</title>
+    <title>Zero Inc.</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/basic.css">
+    <script src="js/script.js" defer></script>
 </head>
-
 <body>
     <div class="container">
-        <!-- Display flex -->
-        <div class="header item1">HEADER
-            <!-- Logo da Navbar -->
-            <nav-icon class="nav-icon">Aqui vai um ícone</nav-icon>
-            <!-- Botão de Assinatura em scroll-->
-            <button class="nav-subscription-btn">nav-subscription-btn</button>
-            <!-- Menu da Navbar -->
-            <nav-menu class="nav-menu">
-
+        <div class="header">
+            <div class="nav-icon">Zero Inc.</div>
+            
+            <button class="nav-subscription-btn"><a href="#">Seja Premium</a></button>
+            
+            <div class="nav-menu">
                 <ul>
-                    <!-- Seleção da Navbar -->
-                    <li><a href="#" target="_blank">Início</a></li>
-                    <li><a href="#" target="_blank">Catálogo</a></li>
-                    <!-- scroll para o footer -->
-                    <li><a href="#" target="_blank">Suporte</a></li>
-                    <li><a href="#" target="_blank">Sobre</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Sobre</a></li>
                 </ul>
-            </nav-menu>
+            </div> 
 
+            <button class="nav-sign-btn"><a href="#">Entrar</a></button>
 
-            <!-- Botão Entra com a conta -->
-            <button class="nav-sign-btn">nav-sign-btn</button>
-
-            <!-- Barra de Pesquisa -->
-            <nav-search class="nav-search">
-            </nav-search>
-
-
+            <div class="nav-search"><a href="#">Pesquisar</a></div>
         </div>
-        <div class="content item2">CONTENT
-            <!-- Imagem ou vídeo de fundo -->
-            <banner-container class="banner-container">
-                <h1>Frase de impacto</h1>
-                <p>Parágrafo</p>
-            </banner-container>
-            <!-- carrossel -->
-            <benefits-container class="benefits-container">
-                <h2>Benefícios</h2>
-                <img src="#" alt="">
-                <h3></h3>
-                <p></p>
-            </benefits-container>
-            <!-- Chave seletora de tipo de streaming -->
-            <button class="streaming-toggle">streaming-toggle</button>
-            <catalog-container class="catalog-container">
-                <games-carousel class="games-carousel">
-                    <!-- Gênero do conteúdo -->
-                    <img src="#" alt="">
-                    <h2>Gênero do conteúdo</h2>
-                    <p></p>
-                </games-carousel>
-                <movies-carousel class="movies-carousel">
-                    <!-- Carrossel de filmes-->
-                     <h2>Carrossel de filmes</h2>
-                    <img src="#" alt="">
-                    <h3></h3>
-                    <p></p>
-                </movies-carousel>
-            </catalog-container>
-            <!--  -->
-            <plans-container class="plans-container">
-                <h2>Título dos antes dos planos</h2>
-                <h3>Subtítulo</h3>
-                <!-- Chave seletora de planos -->
-                <p>Faturado mensalmente <button class="plan-toggle">plan-toggle</button> Faturado anualmente</p>
-                <!-- Cards de Planos -->
-                <plans-card class="plans-card">
-                    <h3 class="plans-title"></h3>
-                    <p class="plans-description"></p>
-                    <h2 class="plans-price"></h2>
-                    <p></p>
-                    <button class="subscription-btn">subscription-btn</button>
-                    <plans-resources class="plans-resources">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </plans-resources>
 
-                </plans-card>
-                <plans-card class="plans-card">
-                    <h3 class="plans-title"></h3>
-                    <p class="plans-description"></p>
-                    <h2 class="plans-price"></h2>
-                    <p></p>
-                    <button class="subscription-btn">subscription-btn</button>
-                    <plans-resources class="plans-resources">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </plans-resources>
+        <div class="content">
+            <div class="banner-container">
+                <h1>O Melhor dos Jogos e Entretenimento em um só lugar.</h1>
+                <p>Abandone a versão Free. Faça o upgrade hoje e garanta a experiência Premium sem anúncios, criada para a sua geração.</p>
+            </div>
 
-                </plans-card>
-                <plans-card class="plans-card">
-                    <h3 class="plans-title"></h3>
-                    <p class="plans-description"></p>
-                    <h2 class="plans-price"></h2>
-                    <p></p>
-                    <button class="subscription-btn">subscription-btn</button>
-                    <plans-resources class="plans-resources">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </plans-resources>
+            <div class="benefits-container">
+                <h2>Por que ser Premium?</h2>
+                <img src="#" alt="Ícone de velocidade e otimização">
+                <h3>Performance Extrema em qualquer lugar</h3>
+                <p>Nossa tecnologia foi otimizada para carregar seus jogos e séries favoritos em segundos, mesmo em conexões 3G e 4G. Nada de travamentos na melhor parte.</p>
+            </div>
 
-                </plans-card>
-            </plans-container>
+            <button class="streaming-toggle">Ver Jogos | Ver Filmes</button>
+            <h2>Catálogo</h2>
+            <div class="catalog-container">
+                <div class="games-carousel">
+                    
+                    <div class="catalog-background">
+                        <div class="games">
+                            <img src="#" alt="Capa de um jogo">
+                            <h3>Jogo 1</h3>
+                            <p>Descrição jogo 1</p>
+                        </div>
+                    </div>
+                    <div class="catalog-background">
+                        <div class="games">
+                            <img src="#" alt="Capa de um jogo">
+                            <h3>Jogo 1</h3>
+                            <p>Descrição jogo 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="movies-carousel">
+                    <h4>Filmes</h4>
+                    <img src="#" alt="Capa de um filme">
+                    <h3>Filme 1</h3>
+                    <p>Descrição filme 1</p>
+                </div>
+            </div>
+
+            <div class="plans-container">
+                <h2>Escolha o seu plano</h2>
+                <h3>Desbloqueie o máximo do entretenimento com a Zero.</h3>
+                <button class="plan-toggle" onclick="alternarPrecoBotoes()">Alternar Anual/Mensal</button>
+                
+                <div class="plans-card">
+                    <h3 class="plans-title">Zero Basic</h3>  
+                    <p class="plans-description">Ideal para começar e curtir no celular.</p>
+                    <h2 id="price-basic">R$ 19,90 / mês</h2>  
+                    <button class="subscription-btn-basic">Assinar Basic Mensal</button>
+                    <div class="plans-resources">
+                        <ul>
+                            <li>Zero Anúncios</li>
+                            <li>Qualidade HD (Otimizada para 4G)</li>
+                            <li>1 Tela simultânea</li>
+                            <li>Programa de Indicação (Ganhe bônus!)</li>
+                        </ul> 
+                    </div>
+                </div>
+
+                <div class="plans-card">
+                    <h3 class="plans-title">Zero Pro</h3>  
+                    <p class="plans-description">A experiência completa. Nosso plano mais vantajoso.</p>
+                    <h2 id="price-pro">R$ 39,90 / mês</h2>  
+                    <button class="subscription-btn-pro">Assinar Pro Mensal</button>
+                    <div class="plans-resources">
+                        <ul>
+                            <li>Tudo do Basic</li>
+                            <li>Qualidade 4K (Filmes e Jogos)</li>
+                            <li>3 Telas simultâneas</li>
+                            <li>Desconto garantido pagando 1 ano</li>
+                        </ul> 
+                    </div>
+                </div>
+
+                <div class="plans-card">
+                    <h3 class="plans-title">Zero Family</h3>  
+                    <p class="plans-description">Diversão premium para toda a galera.</p>
+                    <h2 id="price-family">R$ 59,90 / mês</h2>
+                    <button class="subscription-btn-family">Assinar Family Mensal</button>
+                    <div class="plans-resources">
+                        <ul>
+                            <li>Tudo do Pro</li>
+                            <li>Até 5 Telas simultâneas</li>
+                            <li>Criação de perfis ilimitados</li>
+                            <li>Suporte Premium 24/7</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer item3">FOOTER</div>
+
+        <div class="footer">
+            <p>&copy; 2026 Zero Inc. - Todos os direitos reservados.</p>
+        </div>
     </div>
 </body>
-
 </html>

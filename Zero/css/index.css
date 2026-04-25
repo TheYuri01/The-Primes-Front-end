@@ -27,9 +27,8 @@
     grid-template-rows: auto;
 }
 
-/* Define uma altura fixa para a área de conteúdo */
 .content {
-    height: 900px;
+    height: auto;
 }
 
 /* Define uma altura fixa para a área do rodapé */

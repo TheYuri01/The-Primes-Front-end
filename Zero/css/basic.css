@@ -35,15 +35,16 @@
   /* Cria um espaço abaixo do cabeçalho */
 }
 
-/* Estiliza a lista do menu de navegação */
-ul {
+.nav-menu ul {
+  margin: 0;
   display: flex;
-  /* Coloca os itens da lista lado a lado horizontalmente */
+  gap: 1rem;
+  list-style: none;
 }
-
-/* Define a largura fixa para cada item da lista do menu */
-li {
-  width: 80px;
+.plans-container ul {
+  margin: 0;
+  display: grid;
+  gap: 1rem;
 }
 
 /* Ajusta o tamanho da fonte dos links dentro da lista do menu.*/
@@ -80,4 +81,21 @@ body {
 .container>div:nth-child(3n) {
   /* Afeta o Footer */
   background-color: #88d8b0;
+}
+.games-carousel{
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+
+.catalog-background {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.plans-card button {
+  text-transform: capitalize;
 }
