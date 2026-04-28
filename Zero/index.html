@@ -16,14 +16,14 @@
             <div class="nav-icon">
                 <img src="img/logo.png" class="nav-logo" alt="">Zero Inc.
             </div>
-            <button class="nav-subscription-btn sign-btn">Seja Premium</button>
+            <a href="#plansID"><button class="nav-subscription-btn sign-btn">Seja Premium</button></a>
 
             <div class="nav-menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Catálogo</a></li>
-                    <li><a href="#">Suporte</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#catalogID">Catálogo</a></li>
+                    <li><a href="#footerID">Suporte</a></li>
+                    <li><a href="#footerID">Sobre</a></li>
                 </ul>
             </div>
 
@@ -39,7 +39,7 @@
                 </div>
                 <h1 class="banner-titulo" id="typewriter">O Melhor dos Jogos e Entretenimento em um só lugar.</h1>
                 <p>Abandone a versão Free. Faça o upgrade hoje e garanta a experiência Premium sem anúncios.</p>
-                <button class="banner-subscription-btn sign-btn">Seja Premium</button>
+                <a href="#plansID"><button class="banner-subscription-btn sign-btn">Seja Premium</button></a>
 
             </div>
 
@@ -68,48 +68,61 @@
 
             </div>
 
-            <button class="streaming-toggle">Ver Jogos | Ver Filmes</button>
+            <button class="streaming-toggle" id="catalogID">Ver Jogos | Ver Filmes</button>
 
             <h2>Catálogo</h2>
             <div class="carousel">
                 <div class="controls">
-                    <button onclick="scrollL()"><</button>
-                    <button onclick="scrollR()">></button>
+                    <button onclick="scrollL()">
+                        << /button>
+                            <button onclick="scrollR()">></button>
                 </div>
                 <div class="catalog">
                     <li class="catalog-card">
                         <img src="/Zero/img/logo.png" class="card-image" alt="Capa de um jogo">
-                        <card-tag class="card-tag"><h4>Genêro</h4></card-tag>
+                        <card-tag class="card-tag">
+                            <h4>Genêro</h4>
+                        </card-tag>
                         <h3 class="card-title">Jogo 1</h3>
                         <p class="card-description">Descrição jogo 1</p>
                     </li>
                     <li class="catalog-card">
                         <img src="/Zero/img/logo.png" class="card-image" alt="Capa de um jogo">
-                        <card-tag class="card-tag"><h4>Genêro</h4></card-tag>
+                        <card-tag class="card-tag">
+                            <h4>Genêro</h4>
+                        </card-tag>
                         <h3 class="card-title">Jogo 2</h3>
                         <p class="card-description">Descrição jogo 2</p>
                     </li>
                     <li class="catalog-card">
                         <img src="/Zero/img/logo.png" class="card-image" alt="Capa de um jogo">
-                        <card-tag class="card-tag"><h4>Genêro</h4></card-tag>
+                        <card-tag class="card-tag">
+                            <h4>Genêro</h4>
+                        </card-tag>
                         <h3 class="card-title">Jogo 3</h3>
                         <p class="card-description">Descrição jogo 3</p>
                     </li>
                     <li class="catalog-card">
                         <img src="/Zero/img/logo.png" class="card-image" alt="Capa de um jogo">
-                        <card-tag class="card-tag"><h4>Genêro</h4></card-tag>
+                        <card-tag class="card-tag">
+                            <h4>Genêro</h4>
+                        </card-tag>
                         <h3 class="card-title">Jogo 4</h3>
                         <p class="card-description">Descrição jogo 4</p>
                     </li>
                     <li class="catalog-card">
                         <img src="/Zero/img/logo.png" class="card-image" alt="Capa de um jogo">
-                        <card-tag class="card-tag"><h4>Genêro</h4></card-tag>
+                        <card-tag class="card-tag">
+                            <h4>Genêro</h4>
+                        </card-tag>
                         <h3 class="card-title">Jogo 5</h3>
                         <p class="card-description">Descrição jogo 5</p>
                     </li>
                     <li class="catalog-card">
                         <img src="/Zero/img/logo.png" class="card-image" alt="Capa de um jogo">
-                        <card-tag class="card-tag"><h4>Genêro</h4></card-tag>
+                        <card-tag class="card-tag">
+                            <h4>Genêro</h4>
+                        </card-tag>
                         <h3 class="card-title">Jogo 6</h3>
                         <p class="card-description">Descrição jogo 6</p>
                     </li>
@@ -153,7 +166,7 @@
                 </div> -->
             </div>
 
-            <div class="plans-section">
+            <div class="plans-section" id="plansID">
                 <div class="plans-title">
                     <h2>Escolha o seu plano</h2>
                     <h3>Desbloqueie o máximo do entretenimento com a Zero.</h3>
@@ -200,17 +213,23 @@
                                 <li>Até 5 Telas simultâneas</li>
                                 <li>Suporte Premium 24/7</li>
                             </ul>
-                    
 
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <p>&copy; 2026 Zero Inc. - Todos os direitos reservados.</p>
+    </div>
+    <div class="footer" id="footerID">
+        <div class="footer-links">
+            <a href="#footerID">Suporte</a>
+            <a href="#footerID">Termos</a>
+            <a href="#footerID">Privacidade</a>
         </div>
+        <p>Zero Inc. — Entretenimento digital</p>
+        <p>&copy; 2026 Zero Inc.</p>
+    </div>
 
     </div>
 </body>

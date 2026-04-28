@@ -41,6 +41,7 @@
 
 html{
   font-family: Outfit;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -92,6 +93,10 @@ button{
 
 /* Estiliza o cabeçalho principal */
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   display: flex;
   /* Coloca os itens internos lado a lado */
   justify-content: space-between;
@@ -363,10 +368,23 @@ button{
 }
 
 .footer{
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: tomato;
   color: #f1f0f0;
   font-size: 0.9rem;
+  padding-bottom: 20px;
 } 
+
+.footer-links{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer p{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
