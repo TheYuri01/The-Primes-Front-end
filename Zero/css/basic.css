@@ -2,6 +2,7 @@
 
 /* Retirar após a conclusão */
 *{
+  box-sizing: border-box;
 }
 
 /* Cria uma animação contínua que movimenta o fundo de um lado para o outro */
@@ -345,8 +346,9 @@ button{
 }
 
 .plans-card{
-
+  width: 300px;
   padding: 10px;
+
   background-color: #f1f0f0;
 }
 
