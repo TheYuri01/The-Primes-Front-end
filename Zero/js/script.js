@@ -5,19 +5,32 @@ const precos = {
 }
 
 Object.keys(precos).forEach(plano=> {
-    precos[plano]['anual'] = Math.floor(precos[plano]['mensal'] * 0.8) + 0.90;
+    const mensal = precos[plano].mensal;
+    const anualTotal = mensal * 12 * 0.8;
+    const arredondado = Math.floor(anualTotal / 12) + 0.90;
+    precos[plano].anualMensal = arredondado;
+    precos[plano].anualTotal = arredondado * 12;
+    precos[plano].economia = (mensal * 12) - precos[plano].anualTotal;
 });
 
 let mensal = true;
 
 function alternarPrecoBotoes() {
     mensal = !mensal;
-    const periodo = mensal ? 'mês' : 'mês(cobrado anualmente) ';
+
     ['basic', 'pro', 'family'].forEach(plano => {
-        const valor = precos[plano][mensal ? 'mensal' : 'anual'];
-        document.getElementById(`price-${plano}`).innerText = `R$ ${valor.toFixed(2).replace('.', ',')} / ${periodo}`;
-        const tooglebtn = document.querySelector(`.subscription-btn-${plano}`);
-        tooglebtn.innerText = mensal ? `Assinar ${plano} Mensal` : `Assinar ${plano} Anual(20% de desconto!)`;
+
+        const priceEl = document.getElementById(`price-${plano}`);
+        const extraEl = document.getElementById(`extra-${plano}`);
+
+        if (mensal) {
+            priceEl.innerText = `R$ ${precos[plano].mensal.toFixed(2).replace('.', ',')} / mês`;
+            extraEl.innerText = "";
+        } else {
+            priceEl.innerText = `R$ ${precos[plano].anualMensal.toFixed(2).replace('.', ',')} / mês`;
+
+            extraEl.innerHTML = `<span class="total">Total: R$ ${precos[plano].anualTotal.toFixed(2).replace('.', ',')}</span><br><span class="economia">Economia: R$ ${precos[plano].economia.toFixed(2).replace('.', ',')}</span>`;
+        }
     });
 }
 
@@ -29,15 +42,6 @@ botoes.forEach(botao => {
         secaoPlanos.scrollIntoView({behavior: "smooth"});
     });
 });
-
-
-const carrossel = document.querySelector('.catalog');
-function scrollL() {
-    carrossel.scrollBy({left: - 100, behavior: 'smooth'});
-}
-function scrollR() {
-    carrossel.scrollBy({left: 100, behavior: 'smooth'});
-}
 
 // Animação de digitação para o texto do banner
 
@@ -53,3 +57,27 @@ let i = 0;
     setTimeout(digitar, Math.random() * 20 + 50);
   }
 })();
+
+
+// Carrosel
+const scrollers = document.querySelectorAll(".carousel");
+
+if (!window.matchMedia("(prefers-reduce-motion: reduce)").matches){
+    addAnimation();
+}
+
+function addAnimation(){
+    scrollers.forEach((carousel) => {
+        carousel.setAttribute("data-animated", true)
+
+        const scrollerInner = carousel.querySelector('.catalog');
+        const scrollerContent = Array.from(scrollerInner.children);
+
+        scrollerContent.forEach(item => {
+            const duplicatedItem = item.cloneNode(true);
+            duplicatedItem.setAttribute('aria-hidden', true);
+            scrollerInner.appendChild(duplicatedItem);
+        });
+    });
+} 
+

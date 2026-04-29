@@ -29,10 +29,11 @@
 
 .content {
     height: auto;
+    width: 100vw;
 }
 
 /* Define uma altura fixa para a área do rodapé */
 .footer {
     height: 100px;
+    width: 100vw;
 }
-
