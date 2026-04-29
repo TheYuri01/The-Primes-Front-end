@@ -37,7 +37,7 @@
                 <div class="banner-icon">
                     <img src="img/logo.png" class="nav-logo" alt="">Zero Inc.
                 </div>
-                <h1 class="banner-titulo" id="typewriter">O Melhor dos Jogos e Entretenimento em um só lugar.</h1>
+                <h1 class="banner-title" id="typewriter">O Melhor dos Jogos e Entretenimento em um só lugar.</h1>
                 <p>Abandone a versão Free. Faça o upgrade hoje e garanta a experiência Premium sem anúncios.</p>
                 <a href="#plansID"><button class="banner-subscription-btn sign-btn">Seja Premium</button></a>
 
@@ -45,21 +45,22 @@
 
             <div class="benefits-container">
 
-                <h2>Por que ser Premium?</h2>
-
+                <div class="benefits-head">
+                    <h2 class="benefits-title">Por que ser Premium? <span class="seta">▼</span></h2>
+                </div>
                 <div class="benefits-cards">
 
-                    <div class="benefit-card">
+                    <div class="benefit-card" id="benefits-animation">
                         <h3> Performance</h3>
                         <p>Carregamento rápido e otimizado.</p>
                     </div>
 
-                    <div class="benefit-card">
+                    <div class="benefit-card" id="benefits-animation">
                         <h3> Catálogo</h3>
                         <p>Diversos jogos e filmes disponíveis.</p>
                     </div>
 
-                    <div class="benefit-card">
+                    <div class="benefit-card" id="benefits-animation">
                         <h3> Streaming</h3>
                         <p>Alta qualidade em qualquer dispositivo.</p>
                     </div>
@@ -67,103 +68,62 @@
                 </div>
 
             </div>
+            <h2 class="catalog-title" id="catalogID" >Catálogo em destaque</h2>
 
-            <button class="streaming-toggle" id="catalogID">Ver Jogos | Ver Filmes</button>
+            <div class="carousel" id="carousel-animation" data-direction="right">
 
-            <h2>Catálogo</h2>
-            <div class="carousel">
-                <div class="controls">
-                    <button onclick="scrollL()">
-                        << /button>
-                            <button onclick="scrollR()">></button>
-                </div>
                 <div class="catalog">
-                    <li class="catalog-card">
-                        <img src="/Zero/img/logo.png" class="card-image" alt="Capa de um jogo">
-                        <card-tag class="card-tag">
-                            <h4>Genêro</h4>
+                    <li class="catalog-card ">
+                        <img src="/Zero/img/redDead.jpg" class="card-image" alt="Capa de um jogo">
+                        <card-tag class="card-tag ">
+                            <h4 id="jogo">Jogo</h4>
                         </card-tag>
-                        <h3 class="card-title">Jogo 1</h3>
-                        <p class="card-description">Descrição jogo 1</p>
+                        <h3 class="card-title">Red Dead Redemption 2</h3>
+                        <p class="card-description">Mundo aberto • Ação </p>
                     </li>
                     <li class="catalog-card">
-                        <img src="/Zero/img/logo.png" class="card-image" alt="Capa de um jogo">
+                        <img src="/Zero/img/vingadores.jpg" class="card-image" alt="Capa de um jogo">
                         <card-tag class="card-tag">
-                            <h4>Genêro</h4>
+                            <h4 idd="filme">Filme</h4>
                         </card-tag>
-                        <h3 class="card-title">Jogo 2</h3>
-                        <p class="card-description">Descrição jogo 2</p>
+                        <h3 class="card-title">Vingadores: Ultimato</h3>
+                        <p class="card-description">Ação • Super-heróis </p>
                     </li>
                     <li class="catalog-card">
-                        <img src="/Zero/img/logo.png" class="card-image" alt="Capa de um jogo">
-                        <card-tag class="card-tag">
-                            <h4>Genêro</h4>
+                        <img src="/Zero/img/eldenRing.jpg" class="card-image" alt="Capa de um jogo">
+                        <card-tag class="card-tag ">
+                            <h4 id="jogo">Jogo</h4>
                         </card-tag>
-                        <h3 class="card-title">Jogo 3</h3>
-                        <p class="card-description">Descrição jogo 3</p>
+                        <h3 class="card-title">Elden Ring (Fromsoftware)</h3>
+                        <p class="card-description">RPG • Mundo aberto </p>
+                    </li>
+                    <li class="catalog-card ">
+                        <img src="/Zero/img/demonSlayer.jpg" class="card-image" alt="Capa de um jogo">
+                        <card-tag class="card-tag ">
+                            <h4 class="filme">Filme</h4>
+                        </card-tag>
+                        <h3 class="card-title">Demon Slayer - Mugen Train</h3>
+                        <p class="card-description">Anime • Ação</p>
                     </li>
                     <li class="catalog-card">
-                        <img src="/Zero/img/logo.png" class="card-image" alt="Capa de um jogo">
+                        <img src="/Zero/img/tsushima.jpg" class="card-image" alt="Capa de um jogo">
                         <card-tag class="card-tag">
-                            <h4>Genêro</h4>
+                            <h4 id="jogo">Jogo</h4>
                         </card-tag>
-                        <h3 class="card-title">Jogo 4</h3>
-                        <p class="card-description">Descrição jogo 4</p>
+                        <h3 class="card-title">Ghost of Tsushima</h3>
+                        <p class="card-description">Ação • Samurai •</p>
                     </li>
                     <li class="catalog-card">
-                        <img src="/Zero/img/logo.png" class="card-image" alt="Capa de um jogo">
+                        <img src="/Zero/img/homemAranha.jpg" class="card-image" alt="Capa de um jogo">
                         <card-tag class="card-tag">
-                            <h4>Genêro</h4>
+                            <h4 id="filme">Filme</h4>
                         </card-tag>
-                        <h3 class="card-title">Jogo 5</h3>
-                        <p class="card-description">Descrição jogo 5</p>
-                    </li>
-                    <li class="catalog-card">
-                        <img src="/Zero/img/logo.png" class="card-image" alt="Capa de um jogo">
-                        <card-tag class="card-tag">
-                            <h4>Genêro</h4>
-                        </card-tag>
-                        <h3 class="card-title">Jogo 6</h3>
-                        <p class="card-description">Descrição jogo 6</p>
+                        <h3 class="card-title">Spider-Man: No Way Home</h3>
+                        <p class="card-description">Super-herói • Multiverso</p>
                     </li>
 
                 </div>
-                <!-- <div aria-hidden="" class="catalog">
-                    <div class="catalog-card">
-                        <img src="#" alt="Capa de um jogo">
-                        <h3>Jogo 1</h3>
-                        <p>Descrição jogo 1</p>
-                    </div>
-                    <div class="catalog-card">
-                        <img src="#" alt="Capa de um jogo">
-                        <h3>Jogo 2</h3>
-                        <p>Descrição jogo 2</p>
-                    </div>
-                    <div class="catalog-card">
-                        <img src="#" alt="Capa de um jogo">
-                        <h3>Jogo 3</h3>
-                        <p>Descrição jogo 3</p>
-                    </div>
-                    <div class="catalog-card">
-                        <img src="#" alt="Capa de um jogo">
-                        <h3>Jogo 4</h3>
-                        <p>Descrição jogo 4</p>
-                    </div>
-                    <div class="catalog-card">
-                        <img src="#" alt="Capa de um jogo">
-                        <h3>Jogo 5</h3>
-                        <p>Descrição jogo 5</p>
-                    </div>
-                    <div class="catalog-card">
-                        <img src="#" alt="Capa de um jogo">
-                        <h3>Jogo 6</h3>
-                        <p>Descrição jogo 6</p>
-                    </div>
-                    <div class="controls">
-                        <button onclick="scrollL()"><--</button>
-                        <button onclick="scrollR()">--></button>
-                <!-- </div>
-                </div> -->
+
             </div>
 
             <div class="plans-section" id="plansID">
@@ -173,17 +133,18 @@
                     <button class="plan-toggle" onclick="alternarPrecoBotoes()">Alternar Anual/Mensal</button>
                 </div>
 
-                <div class="plans-container">
+                <div class="plans-container" id="plans-animation">
                     <div class="plans-card">
                         <h3 class="plans-title">Zero Basic</h3>
                         <p class="plans-description">Ideal para começar e curtir no celular.</p>
                         <h2 id="price-basic">R$ 19,90 / mês</h2>
+                        <p class="plan-extra" id="extra-basic"></p>
                         <button class="subscription-btn-basic">Assinar Basic Mensal</button>
                         <div class="plans-resources">
                             <ul>
                                 <li>Zero Anúncios</li>
                                 <li>Qualidade HD</li>
-                                <li>1 Tela simultânea</li>
+                                <li>1 Dispositivo</li>
                             </ul>
                         </div>
                     </div>
@@ -192,12 +153,13 @@
                         <h3 class="plans-title">Zero Pro</h3>
                         <p class="plans-description">A experiência completa.</p>
                         <h2 id="price-pro">R$ 39,90 / mês</h2>
+                        <p class="plan-extra" id="extra-pro"></p>
                         <button class="subscription-btn-pro">Assinar Pro Mensal</button>
                         <div class="plans-resources">
                             <ul>
                                 <li>Tudo do Basic</li>
-                                <li>Qualidade 4K</li>
-                                <li>3 Telas simultâneas</li>
+                                <li>Qualidade 2K</li>
+                                <li>3 Dispositivos simultâneos</li>
                             </ul>
                         </div>
                     </div>
@@ -206,12 +168,14 @@
                         <h3 class="plans-title">Zero Family</h3>
                         <p class="plans-description">Diversão para toda a galera.</p>
                         <h2 id="price-family">R$ 59,90 / mês</h2>
+                        <p class="plan-extra" id="extra-family"></p>
                         <button class="subscription-btn-family">Assinar Family Mensal</button>
                         <div class="plans-resources">
                             <ul>
                                 <li>Tudo do Pro</li>
-                                <li>Até 5 Telas simultâneas</li>
-                                <li>Suporte Premium 24/7</li>
+                                <li>Qualidade 4K</li>
+                                <li>Até 5 Dispositivos simultâneos</li>
+                                <li>Suporte Premium 24 horas</li>
                             </ul>
 
 
