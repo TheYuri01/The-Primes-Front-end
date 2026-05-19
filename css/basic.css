@@ -177,7 +177,7 @@ button {
   border: 2px solid #f1f0f0;
   background-color: transparent;
 
-  transition: 0.3s ease;
+  transition: 0.1s ease;
 }
 
 .header button:hover {
